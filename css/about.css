@@ -15,6 +15,7 @@
 .content{
     background-color: whitesmoke;
     max-width: 1000px;
+    max-height: auto;
     margin:auto;
 }
 header{
@@ -25,4 +26,42 @@ header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+.bold{
+    font-weight: bold;
+}
+p:first-child:first-letter {
+    color:wheat;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    text-align: justify;
+}
+dt{
+    color: wheat;
+    font-weight: bolder;
+    font-size: large;
+}
+dt::after{
+    content: ": ";
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:visited{
+    color: rebeccapurple;
+    text-decoration: none;
+
+}
+
+
 
