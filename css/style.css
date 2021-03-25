@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 body{
-   
+   height: 100%;
 	margin: 0;
 
 }
@@ -11,6 +11,21 @@ header {
     text-align: center;
     padding: 20px;
     height: 160px;
+    max-width: 1000px;
+    margin: auto;
+
+}
+a:link{
+  color: blue;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+a:visited{
+  color: rebeccapurple;
+  text-decoration: none;
 
 }
 .profile {
@@ -21,15 +36,14 @@ header {
     clear: both;
 }
 .content{
-  background-color: whitesmoke;
   max-width: 1000px;
+  min-height: calc(100vh - 70px);
   margin:auto;
 }
 .navigation.li{
   display: inline;
 }
-/* footer{
-    position: fixed;
+footer{
     bottom: 0;
     background-color: whitesmoke;
     max-width: 1000px;
@@ -37,5 +51,5 @@ header {
     color: black;
     text-align: center;
     
-} */
+}
 
