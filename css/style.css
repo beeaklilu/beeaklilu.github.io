@@ -19,18 +19,23 @@ header {
     width: auto;
     height: 150px;
     clear: both;
-  }
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:whitesmoke;
-    color: black;
-    text-align: center;
-    margin: 5px;
 }
 .content{
-    width: 100%;
-    margin-right: 120px;
+  background-color: whitesmoke;
+  max-width: 1000px;
+  margin:auto;
 }
+.navigation.li{
+  display: inline;
+}
+/* footer{
+    position: fixed;
+    bottom: 0;
+    background-color: whitesmoke;
+    max-width: 1000px;
+    margin:auto;
+    color: black;
+    text-align: center;
+    
+} */
+
