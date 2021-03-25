@@ -1,0 +1,109 @@
+body{
+    background-image: url('../img/background.png');
+    font-weight: 8pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.banner{
+    background-image: url('../img/bannerbg.png');
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: 24pt;
+    font-size: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999
+}
+.container{
+    margin: auto;
+    max-width: 800px;
+    border: solid 4px gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.right-side{
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    font-weight: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+}
+dl{
+    padding: 10pt;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-bottom: 10pt;
+}
+dd > ul > li{
+    list-style: none;
+}
+ul{
+    padding: 0px;
+}
+.left-side{
+    width: 550px;
+    
+}
+.header-rotten{
+    background-image: url('../img/rbg.png');
+    height: 83px;
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+}
+.header-rotten img{
+    vertical-align: middle;
+}
+.col-review{
+    width: 47%;
+    margin-right: 2%;
+    display: inline;
+    float: left;
+}
+.review{
+    background-color: #E8DC9B;
+    border: solid 2px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 8pt;
+    margin-bottom: 20px;
+}
+.reviewer{
+    font-style: italic;
+    overflow: hidden;
+
+
+}
+.review img {
+    float: left;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+.reviewer img{
+    float: left;
+    margin-right: 5px;
+}
+.validator{
+    opacity: 50%;
+    float: right;
+    padding: 5px;
+    
+}
+.page{
+    background-color: #A2B964;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
