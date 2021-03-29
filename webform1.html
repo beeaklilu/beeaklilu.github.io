@@ -36,7 +36,7 @@
     </nav>
 
     <div class="container top-buffer">
-        <form>
+        <form id=form>
             <div class="form-group">
               <label for="email">Email address</label>
               <input type="email" class="form-control" id="email" aria-describedby="tip" placeholder="Enter email">
@@ -54,11 +54,19 @@
               <input type="checkbox" class="form-check-input" id="checkMeOut">
               <label class="form-check-label" for="checkMeOut">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit"  onclick="print()" class="btn btn-primary">Submit</button>
           </form>
 
     </div>
 
 </body>
+<script>
+   function print(){
+       var emailAddress = document.forms.form.email.value;
+       var password = document.forms.form.password.value;
+       var url = document.forms.form.url.value;
+       console.log(emailAddress,password,url);
+   }
+</script>
 
 </html>
