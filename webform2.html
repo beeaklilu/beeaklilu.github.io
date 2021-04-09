@@ -10,6 +10,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/web-form-two.js"></script>
+
     <link rel="stylesheet" href="css/webform2.css">
     <title>Web Form 2</title>
 </head>
@@ -33,12 +37,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Suppliers</a>
                 </li>
-                
+
 
             </ul>
             <div>
                 <a class="navbar-brand" href="#"> Hello!</a>
-               
+
                 <button type="submit" class="btn">Sign Out</button>
             </div>
         </div>
@@ -46,73 +50,62 @@
 
     <div class="container">
         <h2 class="top-buffer">New Product Form</h2>
-        <form>
-            <div class="row top-buffer justify-content-end">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="productNumber">Product Number</label>
-                        <input id="productNumber" type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" class="form-control">
+        <div class="div-form">
+            <form>
+                <div class="row top-buffer justify-content-end">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="productNumber">Product Number</label>
+                            <input id="productNumber" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="unitPrice">Unit Price</label>
+                            <input id="unitPrice" type="text" class="form-control" placeholder="0.0">
+                        </div>
+
                     </div>
 
-                    <div class="form-group">
-                        <label for="unitPrice">Unit Price</label>
-                        <input id="unitPrice" type="text" class="form-control" placeholder="0.0">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="quantityInStock">Quantity in Stock</label>
+                            <input id="quantityInStock" type="number" placeholder="0" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="supplier">Supplier</label>
+
+                            <select id="supplier" class="form-control">
+                                <option selected>Select a supplier</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateSupplied">Date supplied</label>
+                            <input id="dateSupplied" type="date" class="form-control" aria-describedby="validDate">
+                            <small id="validDate" class="form-text text-muted">Enter a valid Date.</small>
+                        </div>
+                    </div>
+
+                    <div style="float: right;">
+
+                        <button type="submit" class="btn btn-outline-primary pull-right">Reset</button>
+                        <button type="submit" class="btn btn-outline-warning">Cancel</button>
+                        <button type="submit" class="btn btn-outline-info">Add Product</button>
+
                     </div>
 
                 </div>
 
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="quantityInStock">Quantity in Stock</label>
-                        <input id="quantityInStock" type="number" placeholder="0" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="supplier">Supplier</label>
-
-                        <select id="supplier" class="form-control">
-                            <option selected>Select a supplier</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="dateSupplied">Date supplied</label>
-                        <input id="dateSupplied" type="date" class="form-control" aria-describedby="validDate">
-                        <small id="validDate" class="form-text text-muted">Enter a valid Date.</small>
-                    </div>
-                </div>
-
-                <div style="float: right;">
-
-                    <button type="submit" class="btn btn-outline-primary pull-right">Reset</button>
-                    <button type="submit" class="btn btn-outline-warning">Cancel</button>
-                    <button type="submit" onclick="showAlert()" class="btn btn-outline-info">Add Product</button>
-
-                </div>
-            </div>
 
 
-        </form>
-
+            </form>
+        </div>
     </div>
 
 </body>
-<script>
-    function showAlert(){
-        alert(
-                        "Product Number: "+  document.getElementById("productNumber").value + "\n" +
-                        "Name: "+  document.getElementById("name").value + "\n" +
-                        "Unit Price: "+  document.getElementById("unitPrice").value + "\n" +
-                        "Quantity In Stock: "+  document.getElementById("quantityInStock").value + "\n" +
-                        "Supplier: "+  document.getElementById("supplier").value + "\n" +
-                        "Date Supplied: "+  document.getElementById("dateSupplied").value + "\n" 
-                    );
-
-    
-    }
- </script>
 
 </html>
